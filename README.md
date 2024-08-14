@@ -1,6 +1,6 @@
 > Identifique o produto que será construído. Para isso, nomeie-o da seguinte forma: imagine o produto em uma caixa, qual nome estaria 
 > escrito nela?
-# ToDoZ
+# Aplicação de agenda para organizar compromissos ou roteiros de viagens  | AOCV
 
 # Visão do Produto
 > Ter uma visão clara do produto é essencial para entender como as primeiras peças do quebra-cabeça do seu negócio se encaixarão. Essa
