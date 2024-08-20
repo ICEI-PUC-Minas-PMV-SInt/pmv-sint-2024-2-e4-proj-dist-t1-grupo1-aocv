@@ -1,19 +1,27 @@
 # Personas
 
-> Identifique as principais personas e descreva suas atividades, respondendo às seguintes perguntas:
-> qual é o perfil de cada persona? O que elas esperam do produto de software?
+Através de pesquisas de campo dentro do público alvo do projeto, foram estipuladas as personas que seguem juntamente de suas histórias de usuário, dando origem aos requisitos funcionais e não funcionais da aplicação.
 
-## Persona 1: Ana, a Designer Freelancer
+## Personas
 
-- **Perfil:** Ana é uma designer gráfica freelancer com vasta experiência em branding e identidade visual. Ela trabalha de forma independente e gerencia vários projetos simultaneamente.
-- **Expectativas:** Ana espera que o produto de software seja uma solução completa para o gerenciamento de suas tarefas e tempo. Ela deseja uma interface intuitiva que facilite o registro, atualização e remoção de tarefas, além de uma funcionalidade de cronometragem baseada na técnica de pomodoro para melhorar sua concentração e produtividade. Ela também espera que o software permita priorizar suas atividades com base no método de Eisenhower e ofereça a integração com o Google Calendar para uma melhor organização de suas atividades diárias.
+### Cláudio Nathan Bernardes
 
-- **Atividades:** Ana utiliza o software para criar e monitorar suas tarefas em diferentes projetos, utiliza a técnica de pomodoro para manter o foco e evitar distrações, prioriza suas atividades com base na importância e urgência, e integra o calendário do Google para melhorar sua programação e cumprir prazos.
+<img src="figuras/person1.jpeg" width = "150px">
 
-## Persona 2: Carlos, o Cliente Empreendedor
+| PERFIL                                                                                                                                                                                   | EXPECTATIVAS                                                                                                                                 | ATIVIDADES                                                                                                                                                                                                                                                                                                                                 |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Formado em administração, trabalha com finanças em um banco digital que atende todo o território nacional. Tem facilidade com o uso de tecnologia, principalmente em dispositivos mobiles. |Ele busca uma plataforma digital para gerenciar e ajustar seu tempo de maneira simples e eficaz. | Ele tem uma rotina agitada e pouco tempo para se organizar. Além disso, não sabe gerenciar o tempo e precisa de um aplicativo para fazer anotações. |
 
-- **Perfil:** Carlos é um empreendedor e dono de uma agência de marketing digital. Ele frequentemente contrata freelancers para desenvolver campanhas e projetos específicos para seus clientes.
-- **Expectativas:** Carlos espera que o produto de software ofereça transparência e precisão no registro do tempo gasto pelos freelancers em cada tarefa e projeto. Ele deseja receber relatórios detalhados sobre o progresso dos trabalhos contratados, para tomar decisões informadas e garantir a eficiência da equipe freelancer.
-- **Atividades:** Carlos utiliza a plataforma para monitorar os relatórios de tempo e custo fornecidos pelos freelancers contratados, utiliza as informações para validar o trabalho realizado e fazer pagamentos precisos, e realiza avaliações de desempenho com base nas métricas apresentadas pelo software. Ele também usa os dados para tomar decisões estratégicas sobre a alocação de recursos em projetos futuros.
+---
+
+### Renan Thiago Alexandre Lima
+
+<img src="figuras/person2.jpeg" width = "150px">
+
+| PERFIL                                                                                                           | EXPECTATIVAS                                                                                                                                      | ATIVIDADES                                                                                                                                                                                                                                                                           |
+| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Advogado que trabalha em um escritório de gestão empresarial e tem habilidade com tecnologia. | Renan busca um software que ofereça uma solução completa para gerenciar tarefas e tempo, com uma interface intuitiva e funcionalidade de cronometragem com a técnica de pomodoro. |  Ele tem uma rotina intensa e dificuldade em se organizar, precisando de um aplicativo para gerenciar suas atividades e fazer anotações sobre seu trabalho. |
+
+---
 
 [Retorna](../README.md)
