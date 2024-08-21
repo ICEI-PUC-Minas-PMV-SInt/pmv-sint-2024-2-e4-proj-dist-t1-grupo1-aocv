@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("todoz.api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1fe2ee1c43d5628be7f7384ae5de6ee68da61c3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce9dcdcaa1304069a49e9d351e6a943379527b95")]
 [assembly: System.Reflection.AssemblyProductAttribute("todoz.api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("todoz.api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
