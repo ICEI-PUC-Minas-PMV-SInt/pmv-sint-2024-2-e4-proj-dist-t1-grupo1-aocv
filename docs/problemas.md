@@ -1,9 +1,5 @@
 # Problemas & dores
 
-> Descreva de forma abrangente os principais problemas e dores que o produto de software resolverá.
-> Detalhes específicos sobre as funcionalidades serão elaborados posteriormente. A seguinte pergunta
-> pode auxiliar nessa descrição: quais são os problemas e dores mais relevantes encontrados no cenário corrente?
-
 ## 1. Dificuldade em gerenciar múltiplos projetos simultâneos:
 * Desorganização: É fácil se perder em meio a vários projetos ao mesmo tempo, resultando em atrasos e prejuízo na relação com os clientes.
 * Prioridades Confusas: Sem um sistema claro, você pode gastar tempo nas tarefas erradas enquanto as mais importantes ficam de lado.
