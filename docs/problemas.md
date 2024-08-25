@@ -4,12 +4,29 @@
 > Detalhes específicos sobre as funcionalidades serão elaborados posteriormente. A seguinte pergunta
 > pode auxiliar nessa descrição: quais são os problemas e dores mais relevantes encontrados no cenário corrente?
 
-1. Dificuldade em organizar e gerenciar múltiplas tarefas em projetos distintos.
-2. Dificuldade de concentração, resultando em redução da produtividade durante a execução das atividades.
-3. Necessidade de priorizar as atividades de acordo com sua importância e urgência.
-4. Medição precisa do tempo dedicado a cada tarefa e projeto para fins de cobrança ao cliente.
-5. Necessidade de integração com o Google Calendar para sincronização das atividades e agenda.
-6. Dificuldade em visualizar o custo real de cada projeto com base nas horas trabalhadas.
-8. Falta de uma solução unificada para a gestão do trabalho e do tempo de freelancers.
+## 1. Dificuldade em gerenciar múltiplos projetos simultâneos:
+* Desorganização: É fácil se perder em meio a vários projetos ao mesmo tempo, resultando em atrasos e prejuízo na relação com os clientes.
+* Prioridades Confusas: Sem um sistema claro, você pode gastar tempo nas tarefas erradas enquanto as mais importantes ficam de lado.
+* Sobrecarga: Sem organização, o acúmulo de trabalho gera estresse e cansaço, afetando sua produtividade e saúde.
+
+## 2. Falta de foco e produtividade:
+* Distrações: Trabalhar de casa pode ser difícil com tantas interrupções, o que prejudica o foco.
+* Procrastinação: A liberdade de gerenciar o próprio tempo às vezes leva a adiamentos, o que afeta o andamento dos projetos.
+* Rotina Irregular: Sem uma rotina estável, a produtividade oscila, com altos e baixos frequentes.
+
+## 3. Dificuldade em medir o tempo gasto nas tarefas
+* Sem Controle: Sem uma ferramenta para rastrear o tempo, é difícil saber quanto foi realmente investido em cada tarefa.
+* Cobrança Incorreta: A falta de dados precisos pode fazer você cobrar a mais ou a menos dos clientes.
+* Planejamento Ruim: Sem saber quanto tempo as tarefas consomem, fica difícil planejar e alocar os recursos de forma eficiente.
+
+## 4. Falta de clareza financeira
+* Cálculos Inexatos: Sem controle do tempo e dos custos, você pode perder dinheiro ou definir preços errados.
+* Gestão Financeira Desorganizada: Sem um sistema integrado, receitas e despesas ficam fora de controle, dificultando previsões.
+* Visão Fragmentada: Falta de uma visão clara dos ganhos e gastos por projeto, dificultando decisões financeiras estratégicas.
+
+## 5. Problemas em manter um equilíbrio saudável entre trabalho e vida pessoal
+* Trabalho Excessivo: Sem controle sobre as horas de trabalho, você acaba trabalhando demais e se esgotando.
+* Sem Separação: Horários flexíveis sem organização fazem o trabalho invadir o tempo de descanso, afetando sua saúde.
+* Dificuldade de Desconectar: É difícil se desligar do trabalho, o que leva ao cansaço mental e à queda na qualidade de vida.
 
 [Retorna](../README.md)
