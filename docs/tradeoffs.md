@@ -1,6 +1,6 @@
 # Trade-offs de Características de Qualidade
 
-As categorias de requisitos não-funcionais para o produto de software "FocusFlow", conforme o modelo FURPS+, seriam:
+As categorias de requisitos não-funcionais para o produto de software "Timely", conforme o modelo FURPS+, seriam:
 
 1. **Usabilidade**: 
    
