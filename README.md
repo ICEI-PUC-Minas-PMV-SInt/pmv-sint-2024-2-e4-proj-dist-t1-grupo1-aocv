@@ -2,14 +2,8 @@
 > escrito nela?
 # Aplicação de agenda para organizar compromissos ou roteiros de viagens  | AOCV
 
-# Visão do Produto
-> Ter uma visão clara do produto é essencial para entender como as primeiras peças do quebra-cabeça do seu negócio se encaixarão. Essa
-> visão deve capturar a essência do valor que seu negócio oferece e transmitir uma mensagem clara e cativante para seus clientes. 
-> Utilize o seguinte modelo para criar a visão do seu produto:
 
-> Para [o nome do cliente final], cujo [o problema que precisa ser resolvido]. O [o nome do produto] é [a categoria do produto] que [o benefício-chave, razão para adquiri-lo]. Diferentemente de [alternativa da concorrência], o nosso produto [a diferença-chave].
-
-Para freelancers que trabalham em diversos projetos, cujo desafio é gerenciar tarefas, priorizar atividades, manter o foco e medir o custo de cada projeto com precisão. O ToDoZ é um software de gerenciamento de tarefas e tempo baseado na técnica de pomodoro e método de Eisenhower, que melhora a concentração, aumenta a produtividade e permite um melhor planejamento financeiro. Diferentemente de outras opções no mercado, nosso produto oferece uma solução completa e eficiente para o dia a dia do freelancer.
+O Timely é mais do que apenas um aplicativo de agenda, é seu copiloto pessoal para uma vida mais organizada e produtiva. Imagine ter todos os seus compromissos, tarefas e planos de viagem centralizados em um só lugar, acessíveis a qualquer hora e em qualquer dispositivo. Com o Timely, você não apenas gerencia seu tempo, mas também descobre novas oportunidades e otimiza suas jornadas. Seja para planejar suas férias dos sonhos ou para organizar sua rotina agitada, o Timely simplifica sua vida e te ajuda a alcançar seus objetivos com mais eficiência.
 
 
 ## Etapa 1: Requisitos do produto
