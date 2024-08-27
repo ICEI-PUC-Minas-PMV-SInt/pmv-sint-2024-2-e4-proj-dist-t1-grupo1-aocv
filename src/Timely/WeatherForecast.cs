@@ -1,4 +1,4 @@
-namespace todoz.api;
+namespace Timely;
 
 public class WeatherForecast
 {
