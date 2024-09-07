@@ -6,6 +6,9 @@ using Timely.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+//desabilit quanto o repository estiver pronto
+//builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
+//builder.Services.AddScoped<ProdutoService>();
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<TimelyContext>(opt =>
