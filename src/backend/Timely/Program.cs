@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Timely.Controllers;
-using Timely.Data;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,12 +11,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-string? connectionString;
-if (builder.Environment.IsDevelopment())
-{
-    connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-    builder.Services.AddDbContext<TimelyContext>(options => { options.UseSqlite(connectionString); });
-}
 
 
 
