@@ -47,4 +47,5 @@ Servidor para Cliente: O servidor responde ao cliente com os dados necessários,
 
 Este diagrama mostra como todas as partes da aplicação trabalham juntas para proporcionar uma experiência eficiente e integrada para Renan, ajudando-o a gerenciar suas tarefas e melhorar sua produtividade.
 
+![Untitled diagram-2024-09-30-234214](https://github.com/user-attachments/assets/bea5a869-6bad-4098-b381-9428f35dc64f)
 
