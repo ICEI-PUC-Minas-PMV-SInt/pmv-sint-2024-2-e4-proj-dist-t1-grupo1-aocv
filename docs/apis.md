@@ -5,12 +5,15 @@
 > de respostas, os parâmetros de URL esperados e o mecanismo de autenticação e autorização 
 > utilizado.
 
-| Endpoint                             | Método | Descrição                                      | Parâmetros                        | Formato da Resposta | Autenticação e Autorização |
-|--------------------------------------|--------|------------------------------------------------|-----------------------------------|---------------------|----------------------------|
-| /api/users/{user_id}/tasks/          | GET    | Obter todas as tarefas cadastradas             | user_id (string)                  | JSON                | JWT Token                  |
-| /api/users/{user_id}/tasks/{task_id} | POST   | Criar uma nova tarefa                          | user_id (string) task_id (string) | JSON                | JWT Token                  |
-| /api/users/{user_id}/tasks/{task_id} | GET    | Obter detalhes de uma tarefa específica        | user_id (string) task_id (string) | JSON                | JWT Token                  |
-| /api/users/{user_id}/tasks/{task_id} | PUT    | Atualizar os detalhes de uma tarefa específica | user_id (string) task_id (string) | JSON                | JWT Token                  |
-| /api/users/{user_id}/tasks/{task_id} | DELETE | Excluir uma tarefa específica                  | user_id (string) task_id (string) | JSON                | JWT Token                  |
+## Endpoints API
+
+| Endpoint                            | Método  | Descrição                                  | Parâmetros                       | Formato da Resposta | Autenticação e Autorização |
+|-------------------------------------|---------|--------------------------------------------|----------------------------------|---------------------|----------------------------|
+| /api/agenda/                        | POST    | Criar uma nova agenda                      | agenda (objeto JSON)             | JSON                | JWT Token                   |
+| /api/agenda/{id}                    | GET     | Obter detalhes de uma agenda específica    | id (int)                         | JSON                | JWT Token                   |
+| /api/agenda/{id}                    | PUT     | Atualizar uma agenda existente             | id (int), agenda (objeto JSON)   | JSON                | JWT Token                   |
+| /cadastro/                          | POST    | Criar um novo usuário                      | user (objeto JSON)               | JSON                | JWT Token                   |
+| /cadastro/{id}                      | GET     | Obter detalhes de um usuário específico    | id (int)                         | JSON                | JWT Token                   |
+| /cadastro/{id}                      | PUT     | Atualizar um usuário existente             | id (int), user (objeto JSON)     | JSON                | JWT Token                   |
 
 [Retorna](../README.md)
