@@ -14,7 +14,9 @@ builder.Services.AddSwaggerGen();
 
 
 
-builder.Services.AddScoped<ICadastroRepository>();
+builder.Services.AddScoped<ICadastroRepository, CadastroInMemory>();
+builder.Services.AddScoped<InterfaceAgendaRepository, AgendaInMemory>();
+builder.Services.AddScoped<IViagemEventosRepository, ViagemEventosInMemory>();
 
 var app = builder.Build();
 
