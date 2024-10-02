@@ -15,5 +15,8 @@
 | /cadastro/                          | POST    | Criar um novo usuário                      | user (objeto JSON)               | JSON                | JWT Token                   |
 | /cadastro/{id}                      | GET     | Obter detalhes de um usuário específico    | id (int)                         | JSON                | JWT Token                   |
 | /cadastro/{id}                      | PUT     | Atualizar um usuário existente             | id (int), user (objeto JSON)     | JSON                | JWT Token                   |
+| /ViagemEventos/                          | POST    | Criar um novo Evento de Viagens                     | ViagemEventos (objeto JSON)               | JSON                | JWT Token                   |
+| /ViagemEventos/{id}                      | GET     | Obter detalhes de um Evento de Viagens específico    | id (int)                         | JSON                | JWT Token                   |
+| /ViagemEventos/{id}                      | PUT     | Atualizar um Evento de Viagens existente             | id (int), user (objeto JSON)     | JSON                | JWT Token                   |
 
 [Retorna](../README.md)
