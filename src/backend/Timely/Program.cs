@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Timely.Controllers;
+using Timely.Repositories;
+using Timely.Respositories;
 
 
 var builder = WebApplication.CreateBuilder(args);
