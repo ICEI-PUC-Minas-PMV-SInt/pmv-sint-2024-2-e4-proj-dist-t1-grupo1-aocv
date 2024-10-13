@@ -1,12 +1,17 @@
-using Microsoft.EntityFrameworkCore;
+using Timely.Context;
 using Timely.Controllers;
 using Timely.Repositories;
 using Timely.Respositories;
+using Microsoft.EntityFrameworkCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+//db
+builder.Services.AddDbContext<BancoDeDadosContext>(opt =>
+    opt.UseSqlite("Data Source=app.db"));
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
