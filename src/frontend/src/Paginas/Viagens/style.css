@@ -1,0 +1,97 @@
+.planos-viagem-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(30, 30, 30, 1); /* Fundo escuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra mais escura */
+    margin-top: 20px;
+}
+
+.form-viagem {
+    background-color: #1e1e1e; /* Fundo do formulário mais escuro */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff; /* Cor do texto em branco */
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444; /* Borda escura */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    color: #ffffff; /* Cor do texto em branco */
+    background-color: #333333; /* Cor de fundo do input/textarea escura */
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #4CAF50; /* Cor da borda ao focar */
+    outline: none;
+    background-color: #444; /* Fundo mais claro ao focar */
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: #bbb; /* Cor do placeholder mais clara */
+    opacity: 1; /* Opacidade do placeholder */
+}
+
+.btn-adicionar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-adicionar:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.lista-viagens {
+    margin-top: 40px;
+}
+
+.lista-viagens ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-viagens li {
+    background-color: #2a2a2a; /* Fundo das viagens escuro */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.lista-viagens li:hover {
+    background-color: #333; /* Fundo mais claro ao passar o mouse */
+}
+
+.lista-viagens h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ffffff; /* Cor do título em branco */
+}
+
+.lista-viagens p {
+    margin: 5px 0;
+    color: #bbb; /* Cor do texto mais claro */
+}
