@@ -1,20 +1,31 @@
-.container {
-    margin: auto;
-    width: 50vh;
-    border: 3px solid aquamarine;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 10px;
+    background-color: #BEF264;
     padding: 10px;
+    margin-left: 300px;
+    margin-right: 200px;
+
+  }
+  
+  .grid-container > div {
+    background-color: #111011;
     text-align: center;
-    border-radius: 10px;
+    padding: 20px 0;
+    font-size: 25px;
+  }
+
+input {
+    width: 50%;
+    padding: 15px;
+    border: none;
+    background-color: aliceblue;
     
 }
 
-input {
-    width: 90%;
-    padding: 15px;
-}
-
 input[type="submit"] {
-    width: 100%;
+    width: 50%;
     padding: 15px;
     border-radius: 20px ;
     background-color: aquamarine;
@@ -26,3 +37,36 @@ a:link {
     text-decoration: none;
   }
   
+
+  @media only screen and (max-width: 700px) {
+    .grid-container > div {
+        background-color: #111011;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+      }
+
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 10px;
+        background-color: #000000;
+        padding: 10px;
+        margin-left: 300px;
+        margin-right: 200px;
+    
+      }
+
+
+}
+
+
+
+
+
+

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 
+
 const PlanosViagem = () => {
   const [viagens, setViagens] = useState([]);
   const [novoPlano, setNovoPlano] = useState({
@@ -22,6 +23,8 @@ const PlanosViagem = () => {
   };
 
   return (
+    <>
+    
     <div className="planos-viagem-container">
       <h1>Planos de Viagem</h1>
       <form className="form-viagem" onSubmit={adicionarPlano}>
@@ -95,6 +98,7 @@ const PlanosViagem = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 

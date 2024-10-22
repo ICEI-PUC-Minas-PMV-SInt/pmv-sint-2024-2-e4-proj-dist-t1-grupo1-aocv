@@ -1,5 +1,7 @@
 import { useForm } from 'react-hook-form';
 import './style.css';
+import Sidebar from '../Home/Sidebar';
+
 
 export default function EsqueceuSenha() {
     
@@ -10,10 +12,11 @@ export default function EsqueceuSenha() {
 
   return (
     <> 
-      <div className="container">
-        <h1>Esqueceu a palavra-passe</h1>
-          <div className="row">
-             <div className="col">
+    <Sidebar/>
+    
+      <div className="grid-container">
+        <div>
+          <h1>Esqueceu a palavra-passe</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>
                  {/* register your input into the hook by invoking the "register" function */}
                  <input  {...register("email", { required: true } ) } placeholder="Email" className=""/>
@@ -25,8 +28,7 @@ export default function EsqueceuSenha() {
                   <p><input type="submit" value="Enviar" className=""/></p>
                  </form>
                  <a href="home"> voltar</a>
-              </div>
-           </div>
+            </div>
        </div>
     </>
   );

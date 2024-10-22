@@ -3,10 +3,14 @@ import { Agenda } from "./Paginas/Agenda"
 import EsqueceuSenha from "./Paginas/RecuperarSenha"
 import Viagens from "./Paginas/Viagens"
 import { PaginaInicial } from "./Paginas/Home/Home"
-
+import LoginPage from "./Paginas/Login"
 
 
 const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <LoginPage/>
+  },
   {
     path: "/agenda",
     element: <Agenda/>
@@ -21,6 +25,10 @@ const router = createBrowserRouter([
   },
   {
     path: "",
+    element: <PaginaInicial/>
+  },
+  {
+    path: "home",
     element: <PaginaInicial/>
   },
  

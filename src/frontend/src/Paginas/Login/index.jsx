@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Sidebar from '../Home/Sidebar';
+
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -37,7 +39,9 @@ function LoginPage() {
   };
 
   return (
-    <main className="container mx-auto text-center my-10">
+    <>
+    <Sidebar/>
+    <main className="container ">
       <form className="w-80 mx-auto" onSubmit={handleSubmit}>
         <div className="mb-4">
           <input
@@ -79,6 +83,7 @@ function LoginPage() {
         </div>
       </form>
     </main>
+    </>
   );
 }
 
