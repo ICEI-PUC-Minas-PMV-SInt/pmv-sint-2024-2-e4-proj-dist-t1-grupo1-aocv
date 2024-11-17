@@ -1,18 +1,19 @@
-import React from 'react'
+import React from 'react';
 import './style.css';
 
+const Sidebar = () => {
+    return (
+        <div className="sidebar">
+            <h2 className="sidebar-title">Timely</h2>
+            <ul className="sidebar-links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/agenda">Agenda</a></li>
+                <li><a href="/viagens">Viagens</a></li>
+                <li><a href="/recuperar_senha">Recuperar Senha</a></li>
+                <li><a href="/sobre-nos">Sobre Nós</a></li>
+            </ul>
+        </div>
+    );
+};
 
-export default function Sidebar() {
-  return (
-    <>
-    <div className="sidebar">
-       <a  className="active" href="home">Home</a>
-       <a href="login">Login</a>
-       <a href="recuperar_senha">recuperar senha</a>
-       <a href="agenda">agenda</a>
-       <a href="viagens">viagens</a>
-       <a href="#">About</a>
-    </div>
-    </>
-  )
-}
+export default Sidebar;
