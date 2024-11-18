@@ -1,4 +1,6 @@
-﻿public class Tarefa
+using Timely.Models;
+
+public class Tarefa
 {
     public int TarefaId { get; set; }
     public int UsuarioId { get; set; }
