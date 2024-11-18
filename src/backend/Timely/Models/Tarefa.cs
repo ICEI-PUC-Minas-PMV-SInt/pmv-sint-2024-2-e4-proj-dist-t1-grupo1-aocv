@@ -6,4 +6,5 @@
     public string Descricao { get; set; }
     public DateTime DataVencimento { get; set; }
     public bool Concluida { get; set; }
+    public User Usuario { get; set; }
 }
