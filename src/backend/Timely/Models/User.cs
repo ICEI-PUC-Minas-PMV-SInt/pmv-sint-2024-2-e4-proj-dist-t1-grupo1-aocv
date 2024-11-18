@@ -14,7 +14,7 @@ namespace Timely.Models
         
         public string Password { get; set; }
 
-        public IList<Agenda> Agendas { get; set; }
+        public IList<Tarefa> Tarefas { get; set; }
 
         public IList<Viagem> Viagens { get; set; }
     }
