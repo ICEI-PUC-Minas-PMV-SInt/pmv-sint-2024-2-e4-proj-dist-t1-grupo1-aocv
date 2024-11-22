@@ -8,9 +8,19 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-//db
-builder.Services.AddDbContext<BancoDeDadosContext>(opt =>
-    opt.UseSqlite("Data Source=app.db"));
+
+string mySqlConnection =
+              builder.Configuration.GetConnectionString("TimelyAppMysql");
+           
+//                          O contexto de dados
+builder.Services.AddDbContextPool<BancoDeDadosContext>(options => 
+                options.UseMySql( 
+                    mySqlConnection, 
+                    new MySqlServerVersion(new Version())));
+
+//dbSqlite
+// builder.Services.AddDbContext<BancoDeDadosContext>(opt =>
+//     opt.UseSqlite("Data Source=app.db"));
 
 
 builder.Services.AddControllers();

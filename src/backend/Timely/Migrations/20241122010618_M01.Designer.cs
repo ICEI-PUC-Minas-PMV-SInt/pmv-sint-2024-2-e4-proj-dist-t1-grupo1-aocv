@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Timely.Context;
@@ -11,59 +12,70 @@ using Timely.Context;
 namespace Timely.Migrations
 {
     [DbContext(typeof(BancoDeDadosContext))]
-    [Migration("20241013033850_AddBancoContext")]
-    partial class AddBancoContext
+    [Migration("20241122010618_M01")]
+    partial class M01
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.10");
+            modelBuilder
+                .HasAnnotation("ProductVersion", "8.0.10")
+                .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("Timely.Models.Agenda", b =>
+            MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
+
+            modelBuilder.Entity("Tarefa", b =>
                 {
-                    b.Property<int>("AgendaId")
+                    b.Property<int>("TarefaId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("TEXT");
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("TarefaId"));
 
-                    b.Property<string>("Description")
+                    b.Property<bool>("Concluida")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<DateTime>("DataVencimento")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Titulo")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("longtext");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("INTEGER");
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
 
-                    b.HasKey("AgendaId");
+                    b.HasKey("TarefaId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UsuarioId");
 
-                    b.ToTable("Agenda");
+                    b.ToTable("Tarefa");
                 });
 
             modelBuilder.Entity("Timely.Models.User", b =>
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("UserId"));
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("longtext");
 
                     b.HasKey("UserId");
 
@@ -74,20 +86,22 @@ namespace Timely.Migrations
                 {
                     b.Property<int>("ViagemId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("ViagemId"));
 
                     b.Property<DateTime>("Final")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("datetime");
 
                     b.Property<DateTime>("Inicio")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("UserId")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.HasKey("ViagemId");
 
@@ -96,15 +110,15 @@ namespace Timely.Migrations
                     b.ToTable("Viagem");
                 });
 
-            modelBuilder.Entity("Timely.Models.Agenda", b =>
+            modelBuilder.Entity("Tarefa", b =>
                 {
-                    b.HasOne("Timely.Models.User", "User")
-                        .WithMany("Agendas")
-                        .HasForeignKey("UserId")
+                    b.HasOne("Timely.Models.User", "Usuario")
+                        .WithMany("Tarefas")
+                        .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("User");
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Timely.Models.Viagem", b =>
@@ -120,7 +134,7 @@ namespace Timely.Migrations
 
             modelBuilder.Entity("Timely.Models.User", b =>
                 {
-                    b.Navigation("Agendas");
+                    b.Navigation("Tarefas");
 
                     b.Navigation("Viagens");
                 });
