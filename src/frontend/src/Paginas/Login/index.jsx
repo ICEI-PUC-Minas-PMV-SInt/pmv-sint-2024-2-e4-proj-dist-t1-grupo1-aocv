@@ -27,6 +27,7 @@ function LoginPage() {
 
       const responseData = await response.json();
       if (response.ok) {
+        localStorage.setItem('jwtToken', responseData.token);
         navigate("/?");
       } else {
         alert(responseData.message);

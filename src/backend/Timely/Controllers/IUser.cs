@@ -9,6 +9,7 @@ namespace Timely.Controllers
         void Update(User user);
         void Delete(int id);
         IEnumerable<User> GetAll();
+        User? FindByEmail(string email);
     }
 
 }

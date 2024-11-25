@@ -45,6 +45,11 @@ namespace Timely.Respositories
                 UserList.Remove(user);
             }
         }
+
+        public User? FindByEmail(string email)
+        {
+            return UserList.FirstOrDefault(u => u.Email.Equals(email, StringComparison.OrdinalIgnoreCase));
+        }
     }
 
 }
