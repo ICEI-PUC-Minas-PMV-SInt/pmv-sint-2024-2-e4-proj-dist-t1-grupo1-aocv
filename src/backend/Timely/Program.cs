@@ -29,6 +29,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy", policy =>
+    {
+        policy.WithOrigins("https://timely.com.br") // URL do seu frontend React
+              .AllowAnyMethod() // Permite GET, POST, PUT, DELETE, etc.
+              .AllowAnyHeader(); // Permite todos os cabeçalhos
+    });
+});
 
 
 builder.Services.AddScoped<ICadastroRepository, CadastroInMemory>();
@@ -47,6 +56,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.useCors("CorsPolicy");
 
 app.UseAuthorization();
 
