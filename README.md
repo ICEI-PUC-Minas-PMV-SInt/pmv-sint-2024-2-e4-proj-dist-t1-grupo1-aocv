@@ -26,7 +26,7 @@ O Timely é mais do que apenas um aplicativo de agenda, é seu copiloto pessoal 
 
 ### Etapa 4: Testes e implantação da aplicação em nuvem
 
-* [Roteiro de testes](docs/roteiro-de-teste-e-deploy.md)
+* [Roteiro de testes](docs/roteiro-de-testes.md)
 * [Roteiro de implementação](docs/roteiro-de-implementacao.md)
 
 ### Etapa 5: Entrega e apresentação do produto
