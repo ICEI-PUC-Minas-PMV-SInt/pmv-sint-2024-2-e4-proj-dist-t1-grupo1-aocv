@@ -1,5 +1,3 @@
-git commit -m "feat: Implementação completa do projeto com .NET Core e React
-
 ## Roteiro de Implementação
 
 ### Descrição Geral
