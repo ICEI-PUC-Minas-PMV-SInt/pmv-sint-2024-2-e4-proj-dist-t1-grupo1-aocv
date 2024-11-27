@@ -30,15 +30,27 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configure CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("CorsPolicy", policy =>
+    options.AddPolicy("AllowAllOrigins", builder =>
     {
-        policy.WithOrigins("https://timely.com.br") // URL do seu frontend React
-              .AllowAnyMethod() // Permite GET, POST, PUT, DELETE, etc.
-              .AllowAnyHeader(); // Permite todos os cabeçalhos
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
     });
 });
+
+
+// builder.Services.AddCors(options =>
+// {
+//     options.AddPolicy("CorsPolicy", policy =>
+//     {
+//         policy.WithOrigins("https://timely.com.br") // URL do seu frontend React
+//               .AllowAnyMethod() // Permite GET, POST, PUT, DELETE, etc.
+//               .AllowAnyHeader(); // Permite todos os cabeçalhos
+//     });
+// });
 
 // Configuração de autenticação JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -75,7 +87,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors("CorsPolicy");
+// Use CORS
+app.UseCors("AllowAllOrigins");
+// app.UseCors("CorsPolicy");
 
 app.UseAuthentication(); 
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import Api from '../Api/Api';
 
 const Sidebar = () => {
     return (
@@ -10,7 +11,8 @@ const Sidebar = () => {
                 <li><a href="/agenda">Agenda</a></li>
                 <li><a href="/viagens">Viagens</a></li>
                 <li><a href="/recuperar_senha">Recuperar Senha</a></li>
-                <li><a href="/sobre-nos">Sobre Nós</a></li>
+                <li><a href="/sobre-nos">Sobre Nos</a></li>
+                <li><a ><Api/></a></li>
             </ul>
         </div>
     );

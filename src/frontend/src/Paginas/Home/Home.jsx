@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 import Sidebar from './Sidebar';
 
+
 export function PaginaInicial() {
     return (
         <>
@@ -26,6 +27,7 @@ export function PaginaInicial() {
                             className="bg-gray-800 text-white text-3xl w-80 px-10 py-8 rounded-md hover:bg-gray-700 text-center"
                         >
                             Cadastre-se
+                           
                         </a>
                     </div>
                 </div>
